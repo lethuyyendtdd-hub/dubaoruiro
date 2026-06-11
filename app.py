@@ -111,7 +111,7 @@ with st.sidebar:
 # THÀNH PHẦN 2: HEADER — VÙNG ĐỊNH HƯỚNG VÀ KIỂM TRA TRẠNG THÁI RỖNG
 # ==============================================================================
 # Thay đổi màu tiêu đề sang màu đỏ bằng tính năng định dạng màu chữ của Streamlit
-st.title("🛡️ :red[Ứng dụng Phát hiện Giao dịch Gian lận Tài chính]")
+st.title("❤ :red[Ứng dụng Phát hiện Giao dịch Gian lận Tài chính]")
 st.caption("Giải pháp tích hợp công nghệ Học máy hỗ trợ nhận diện, chấm điểm rủi ro và ngăn ngừa sớm hành vi gian lận giao dịch trực tuyến dựa trên nền tảng phân tích thuộc tính số học.")
 
 if uploaded_file is None:

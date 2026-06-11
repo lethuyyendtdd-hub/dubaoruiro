@@ -110,7 +110,8 @@ with st.sidebar:
 # ==============================================================================
 # THÀNH PHẦN 2: HEADER — VÙNG ĐỊNH HƯỚNG VÀ KIỂM TRA TRẠNG THÁI RỖNG
 # ==============================================================================
-st.title("🛡️ Ứng dụng Phát hiện Giao dịch Gian lận Tài chính")
+# Thay đổi màu tiêu đề sang màu đỏ bằng tính năng định dạng màu chữ của Streamlit
+st.title("🛡️ :red[Ứng dụng Phát hiện Giao dịch Gian lận Tài chính]")
 st.caption("Giải pháp tích hợp công nghệ Học máy hỗ trợ nhận diện, chấm điểm rủi ro và ngăn ngừa sớm hành vi gian lận giao dịch trực tuyến dựa trên nền tảng phân tích thuộc tính số học.")
 
 if uploaded_file is None:
@@ -160,8 +161,6 @@ if btn_train:
             smote = SMOTE(random_state=random_state)
             X_train_res, y_train_res = smote.fit_resample(X_train_scaled, y_train)
         else:
-            # === ĐÃ SỬA LỖI TẠI ĐÂY ===
-            # Loại bỏ dấu mở ngoặc sai cú pháp cũ, gán giá trị rõ ràng và tường minh
             X_train_res = X_train_scaled
             y_train_res = y_train
             
